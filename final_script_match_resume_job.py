@@ -10,7 +10,7 @@ import pandas as pd
 import joblib
 import re
 
-from PyPDF2 import PdfReader
+#from PyPDF2 import PdfReader
 import docx2txt
 from sentence_transformers import SentenceTransformer
 import numpy as np
