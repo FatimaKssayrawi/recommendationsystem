@@ -3,4 +3,8 @@ joblib
 scikit-learn
 pandas
 numpy
+PyPDF2
+docx2txt
+sentence-transformers
+
 # Add any other packages your script uses
