@@ -1,0 +1,6 @@
+streamlit
+joblib
+scikit-learn
+pandas
+numpy
+# Add any other packages your script uses
