@@ -275,14 +275,14 @@ We are seeking a compassionate and experienced ICU Registered Nurse to provide c
     ,
     "Sales_Manager_Job": {
     "description": """💼 Job Title: Sales Manager
-📍 Location: Beirut, Lebanon
-🕐 Job Type: Full-time
-📅 Experience Level: Mid-level (3–6 years)
+📍** Location:** Beirut, Lebanon
+🕐 **Job Type:** Full-time
+📅 **Experience Level:** Mid-level (3–6 years)
 
-📝 Job Summary:
+📝 **Job Summary:**
 We are seeking an energetic and goal-driven Sales Manager to lead our B2B sales team. The ideal candidate will oversee the sales pipeline, develop strategic plans, and build long-term customer relationships. You will report directly to the Head of Sales and work closely with marketing and product teams to align growth efforts.
 
-🔨 Key Responsibilities:
+🔨**Key Responsibilities:**
 - Lead and mentor a team of 5–7 sales representatives.
 - Develop and execute sales strategies to meet revenue targets.
 - Manage the full sales lifecycle: prospecting, pitching, negotiating, and closing.
@@ -291,26 +291,26 @@ We are seeking an energetic and goal-driven Sales Manager to lead our B2B sales 
 - Collaborate with marketing to optimize lead generation and campaigns.
 - Prepare regular reports on team performance and KPIs.
 
-📚 Requirements:
+📚 **Requirements:**
 
-✅ Must-Have:
+✅ **Must-Have:**
 - Bachelor’s degree in Business, Marketing, or a related field.
 - 3+ years of experience in sales, including team leadership.
 - Strong B2B sales track record.
 - Excellent negotiation and presentation skills.
 - Familiarity with CRM tools like Salesforce or HubSpot.
 
-💡 Nice-to-Have:
+💡 **Nice-to-Have:**
 - Experience in SaaS or tech sales
 - Multilingual (Arabic, English, French)
 - Knowledge of regional markets
 
-🧠 Soft Skills:
+🧠 **Soft Skills:**
 - Leadership and coaching ability
 - Strategic mindset with hands-on execution
 - Resilient and results-oriented
 
-🎁 What We Offer:
+🎁 **What We Offer:**
 - Competitive salary with commissions
 - Health and travel insurance
 - Professional development programs
