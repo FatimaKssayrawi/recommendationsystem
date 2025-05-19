@@ -21,9 +21,6 @@ supported_files = {
     "Graphic_Designer_Job.pdf": "Graphic_Designer_Job",
     "Graphic_Designer_Job.docx": "Graphic_Designer_Job"
 
-
-
-
 }
 
 # Static data for supported jobs
