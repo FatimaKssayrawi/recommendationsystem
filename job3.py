@@ -10,12 +10,93 @@ job_file = st.file_uploader("Upload a job description:", type=["pdf"])
 # Static examples (with unique resume names and structured resume summaries)
 job_data = {
     "Backend_Developer_Job.pdf": {
-        "description": """We are looking for a Backend Developer to design and maintain scalable APIs and databases...""",
+        "description": """🔧 Job Title: Backend Developer
+📍 Location: Hybrid – Detroit, MI / Remote
+🕐 Job Type: Full-time
+💼 Department: Software Engineering
+📅 Experience Level: Mid-level (3–5 years)
+📝 Job Summary:
+We are seeking a talented and passionate Backend Developer to join our growing engineering team. You will be responsible for building and maintaining the server-side logic, APIs, and database systems that power our web and mobile applications. As part of a cross-functional team, you will work closely with front-end developers, product managers, and DevOps engineers to deliver scalable and high-performance backend services.
+
+🔨 Key Responsibilities:
+Design, develop, and maintain RESTful and/or GraphQL APIs.
+Build scalable, secure, and performant backend services using Python (Django/Flask) or Node.js.
+Integrate third-party APIs and services (e.g., payment gateways, analytics, authentication providers).
+Develop and manage relational (e.g., PostgreSQL, MySQL) and non-relational databases (e.g., MongoDB).
+Write unit, integration, and performance tests to ensure code quality and system stability.
+Collaborate with DevOps to deploy and monitor backend services using tools like Docker, Kubernetes, CI/CD pipelines, and AWS/GCP.
+Participate in code reviews and help enforce backend coding standards and best practices.
+Troubleshoot production issues and implement fixes and improvements.
+Maintain clear and up-to-date backend documentation.
+
+📚 Requirements:
+✅ Must-Have:
+Bachelor’s degree in Computer Science, Software Engineering, or a related field.
+3+ years of professional experience building backend systems.
+Proficiency in backend languages such as Python, JavaScript (Node.js), Java, or Go.
+Experience working with frameworks like Django, Flask, Express.js, or Spring Boot.
+Deep understanding of REST APIs, HTTP, OAuth2, JWT, and API versioning.
+Strong knowledge of relational databases (e.g., PostgreSQL, MySQL) and query optimization.
+Experience with Git, Docker, and continuous integration tools.
+Familiarity with cloud infrastructure (e.g., AWS Lambda, S3, EC2, RDS) or GCP/Azure.
+Solid understanding of data structures, algorithms, and software design patterns.
+
+💡 Nice-to-Have:
+Experience with GraphQL.
+Knowledge of event-driven systems (e.g., Kafka, RabbitMQ).
+Familiarity with monitoring/logging tools (e.g., Prometheus, ELK stack).
+Experience with microservices architecture.
+
+🧠 Soft Skills:
+Excellent problem-solving and debugging skills.
+Strong communication and collaboration abilities.
+Able to work independently and in a fast-paced agile environment.
+Passion for learning and staying current with backend trends and technologies.
+
+🎁 What We Offer:
+Competitive salary and performance-based bonuses.
+Comprehensive health, dental, and vision insurance.
+Flexible remote work and paid time off.
+401(k) plan with company match.
+Learning & development budget.
+Opportunity to work on impactful, real-world projects.
+
+🛠️ Tech Stack You'll Use:
+Languages: Python, JavaScript (Node.js), SQL
+Frameworks: Django, Flask, Express.js
+Databases: PostgreSQL, MongoDB, Redis
+Tools: Git, Docker, AWS, Jenkins, Kubernetes, Terraform
+
+📩 How to Apply:
+Submit your resume, GitHub/portfolio link, and a brief cover letter outlining your relevant experience and interest in the role.""",
         "extracted": {
-            "Extracted Skills": "Django, Flask, PostgreSQL, MongoDB, Docker, Git, RESTful APIs",
+            "Extracted Skills": "Programming languages: Python, JavaScript (Node.js), Java, Go, SQL
+                                Frameworks: Django, Flask, Express.js, Spring Boot
+                                API design: RESTful APIs, GraphQL, OAuth2, JWT, API versioning
+                                Databases: PostgreSQL, MySQL, MongoDB, Redis
+                                Tools & technologies: Git, Docker, Kubernetes, Jenkins, Terraform, CI/CD pipelines
+                                Cloud platforms: AWS (Lambda, S3, EC2, RDS), Google Cloud Platform (GCP), Azure
+                                Testing: Unit, integration, and performance testing
+                                Software fundamentals: Data structures, algorithms, software design patterns
+                                Event-driven systems (nice-to-have): Kafka, RabbitMQ
+                                Monitoring/logging tools (nice-to-have): Prometheus, ELK stack
+                                Microservices architecture (nice-to-have)",
+
             "Extracted Experience (Years)": "3+ years",
-            "Extracted Education": "Bachelor's degree in Computer Science",
-            "Extracted Duties": "Develop APIs, optimize databases, collaborate, write testable code"
+            
+            "Extracted Education": "Bachelor’s degree in Computer Science, Software Engineering, or a related field",
+            
+            "Extracted Duties": "Design, develop, and maintain RESTful and/or GraphQL APIs
+                                Build scalable, secure, and performant backend services
+                                Integrate third-party APIs and services (payment gateways, analytics, authentication)
+                                Develop and manage relational and non-relational databases
+                                Write unit, integration, and performance tests to ensure quality and stability
+                                Collaborate with DevOps for deployment and monitoring using Docker, Kubernetes, CI/CD, AWS/GCP
+                                Participate in code reviews and enforce backend coding standards and best practices
+                                Troubleshoot production issues and implement fixes/improvements
+                                Maintain clear and up-to-date backend documentation
+
+"
         },
         "matches": [
             {
