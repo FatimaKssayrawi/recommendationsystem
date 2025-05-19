@@ -124,7 +124,7 @@ Maintain clear and up-to-date backend documentation"""
                 "Explanation": "Strong match on Django, Docker, and RESTful APIs."
             },
             {
-                "Resume": "Resume_Ava_Backend.pdf", "Match Score": 0.54,
+                "Resume": "Resume_Ava_Backend.pdf", "Match Score": 0.76,
                 "Resume (Text Summary)": """**Contact:** ava.dev@example.com  
 **Summary:** Junior web developer with HTML/CSS and basic Python knowledge  
 **Education:** BSc in IT  
@@ -134,7 +134,7 @@ Maintain clear and up-to-date backend documentation"""
                 "Explanation": "Limited technical experience and irrelevant field."
             },
             {
-                "Resume": "Resume_Noah_Backend.pdf", "Match Score": 0.76,
+                "Resume": "Resume_Noah_Backend.pdf", "Match Score": 0.70,
                 "Resume (Text Summary)": """**Contact:** noah.fullstack@example.com  
 **Summary:** Full-stack developer with Flask and Git CI/CD experience  
 **Education:** BSc in Software Engineering  
@@ -144,7 +144,7 @@ Maintain clear and up-to-date backend documentation"""
                 "Explanation": "Strong backend profile with Flask and PostgreSQL."
             },
             {
-                "Resume": "Resume_Emily_Backend.pdf", "Match Score": 0.70,
+                "Resume": "Resume_Emily_Backend.pdf", "Match Score": 0.54,
                 "Resume (Text Summary)": """**Contact:** emily.devops@example.com  
 **Summary:** Software engineer with DevOps and containerization experience  
 **Education:** BSc in Computer Engineering  
@@ -241,7 +241,7 @@ We are seeking a compassionate and experienced ICU Registered Nurse to provide c
                 "Explanation": "Strong ICU background, especially cardiac care and EHR usage."
             },
             {
-                "Resume": "Resume_Emily_MedSurg.pdf", "Match Score": 0.60,
+                "Resume": "Resume_Emily_MedSurg.pdf", "Match Score": 0.78,
                 "Resume (Text Summary)": """**Contact:** emily.nurse@example.com  
 **Summary:** Med-Surg nurse transitioning to ICU  
 **Education:** ADN, RN  
@@ -251,7 +251,7 @@ We are seeking a compassionate and experienced ICU Registered Nurse to provide c
                 "Explanation": "Some relevant skills, but lacks full ICU experience and BSN."
             },
             {
-                "Resume": "Resume_Omar_ICU.pdf", "Match Score": 0.78,
+                "Resume": "Resume_Omar_ICU.pdf", "Match Score": 0.60,
                 "Resume (Text Summary)": """**Contact:** omar.icunurse@example.com  
 **Summary:** ICU nurse from overseas with strong trauma response background  
 **Education:** BSN equivalent, RN license pending NY conversion  
@@ -354,7 +354,7 @@ We are seeking an energetic and goal-driven Sales Manager to lead our B2B sales 
             "Explanation": "Solid sales skills but less emphasis on strategy and team leadership."
         },
         {
-            "Resume": "Resume_Rana_EntrySales.pdf", "Match Score": 0.48,
+            "Resume": "Resume_Rana_EntrySales.pdf", "Match Score": 0.60,
             "Resume (Text Summary)": """**Contact:** rana.entry@example.com  
 **Summary:** Entry-level sales assistant, excellent communicator  
 **Education:** BBA, just graduated  
@@ -429,7 +429,7 @@ As a Customer Success Specialist, you will serve as the client’s trusted advis
             "Explanation": "Excellent experience with SaaS tools, onboarding, and CRM systems."
         },
         {
-            "Resume": "Resume_Mark_TechSupport.pdf", "Match Score": 0.76,
+            "Resume": "Resume_Mark_TechSupport.pdf", "Match Score": 0.85,
             "Resume (Text Summary)": """**Contact:** mark.support@example.com  
 **Summary:** Technical support agent transitioning to customer success  
 **Education:** BS in Information Systems  
@@ -439,7 +439,7 @@ As a Customer Success Specialist, you will serve as the client’s trusted advis
             "Explanation": "Strong support background with relevant tools, learning curve for client ownership."
         },
         {
-            "Resume": "Resume_Salma_Onboard.pdf", "Match Score": 0.68,
+            "Resume": "Resume_Salma_Onboard.pdf", "Match Score": 0.76,
             "Resume (Text Summary)": """**Contact:** salma.onboard@example.com  
 **Summary:** Onboarding associate in EdTech startup  
 **Education:** BA in Education  
@@ -449,7 +449,7 @@ As a Customer Success Specialist, you will serve as the client’s trusted advis
             "Explanation": "Relevant onboarding experience, slightly less technical depth."
         },
         {
-            "Resume": "Resume_Tom_CustomerCare.pdf", "Match Score": 0.59,
+            "Resume": "Resume_Tom_CustomerCare.pdf", "Match Score": 0.65,
             "Resume (Text Summary)": """**Contact:** tom.care@example.com  
 **Summary:** Retail customer care specialist  
 **Education:** BA in English  
@@ -532,7 +532,7 @@ You'll collaborate with copywriters, marketers, and developers to turn creative 
             "Explanation": "Strong portfolio match, well-rounded creative experience, skilled in motion and layout."
         },
         {
-            "Resume": "Resume_Rami_Visuals.pdf", "Match Score": 0.75,
+            "Resume": "Resume_Rami_Visuals.pdf", "Match Score": 0.85,
             "Resume (Text Summary)": """**Contact:** rami.visuals@example.com  
 **Summary:** Visual designer with background in web and social media assets  
 **Education:** BFA in Design  
@@ -542,7 +542,7 @@ You'll collaborate with copywriters, marketers, and developers to turn creative 
             "Explanation": "Good digital design experience; minor gaps in branding depth."
         },
         {
-            "Resume": "Resume_Lina_Junior.pdf", "Match Score": 0.60,
+            "Resume": "Resume_Lina_Junior.pdf", "Match Score": 0.78,
             "Resume (Text Summary)": """**Contact:** lina.junior@example.com  
 **Summary:** Junior designer with passion for typography and layouts  
 **Education:** Bachelor in Fine Arts  
@@ -552,7 +552,7 @@ You'll collaborate with copywriters, marketers, and developers to turn creative 
             "Explanation": "Shows potential but lacks experience and breadth in tools."
         },
         {
-            "Resume": "Resume_Ahmed_UIUX.pdf", "Match Score": 0.67,
+            "Resume": "Resume_Ahmed_UIUX.pdf", "Match Score": 0.75,
             "Resume (Text Summary)": """**Contact:** ahmed.uiux@example.com  
 **Summary:** UI/UX designer with a branding background  
 **Education:** BA in Visual Communication  
@@ -562,7 +562,7 @@ You'll collaborate with copywriters, marketers, and developers to turn creative 
             "Explanation": "Good Figma/UI focus, but missing emphasis on campaign design."
         },
         {
-            "Resume": "Resume_Zara_Creative.pdf", "Match Score": 0.83,
+            "Resume": "Resume_Zara_Creative.pdf", "Match Score": 0.69,
             "Resume (Text Summary)": """**Contact:** zara.creative@example.com  
 **Summary:** Conceptual graphic designer with agency and studio experience  
 **Education:** BA in Graphic Design  
