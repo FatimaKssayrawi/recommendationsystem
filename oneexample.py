@@ -155,9 +155,7 @@ Submit your resume, GitHub/portfolio link, and a brief cover letter outlining yo
                 "Explanation": "Healthcare background, lacks relevant skills."
             }
         ]
-    },
-
-}
+    }
 
 # -----------------------------------------
 # Display job description and matches
