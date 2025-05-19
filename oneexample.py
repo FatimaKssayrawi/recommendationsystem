@@ -261,7 +261,7 @@ We are seeking a compassionate and experienced ICU Registered Nurse to provide c
                 "Explanation": "Strong ICU skills, but license not yet validated in NY."
             },
             {
-                "Resume": "Resume_Anna_ER.pdf", "Match Score": 0.52,
+                "Resume": "Resume_Anna_ER.pdf", "Match Score": 0.53,
                 "Resume (Text Summary)": """**Contact:** anna.er@example.com  
 **Summary:** ER nurse with high-paced triage and first-response experience  
 **Education:** BSN, RN  
@@ -344,7 +344,7 @@ We are seeking an energetic and goal-driven Sales Manager to lead our B2B sales 
             "Explanation": "Strong technical sales profile, some leadership exposure."
         },
         {
-            "Resume": "Resume_Elias_Telecom.pdf", "Match Score": 0.64,
+            "Resume": "Resume_Elias_Telecom.pdf", "Match Score": 0.67,
             "Resume (Text Summary)": """**Contact:** elias.telecom@example.com  
 **Summary:** Account executive in telecom industry  
 **Education:** BS in Business  
