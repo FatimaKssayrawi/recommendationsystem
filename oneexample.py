@@ -13,7 +13,10 @@ supported_files = {
     "Backend_Developer_Job.pdf": "Backend_Developer_Job",
     "Backend_Developer_Job.docx": "Backend_Developer_Job",
     "ICU_Nurse_Job.pdf": "ICU_Nurse_Job",
-    "ICU_Nurse_Job.docx": "ICU_Nurse_Job"
+    "ICU_Nurse_Job.docx": "ICU_Nurse_Job",
+    "Sales_Manager_Job.pdf": "Sales_Manager_Job",
+    "Sales_Manager_Job.docx": "Sales_Manager_Job"
+
 
 }
 
