@@ -11,7 +11,10 @@ job_file = st.file_uploader("Upload a job description:", type=["pdf", "docx"])
 # Map supported filenames to one job key
 supported_files = {
     "Backend_Developer_Job.pdf": "Backend_Developer_Job",
-    "Backend_Developer_Job.docx": "Backend_Developer_Job"
+    "Backend_Developer_Job.docx": "Backend_Developer_Job",
+    "ICU_Nurse_Job.pdf": "ICU_Nurse_Job",
+    "ICU_Nurse_Job.docx": "ICU_Nurse_Job"
+
 }
 
 # Static data for supported jobs
@@ -156,6 +159,114 @@ Maintain clear and up-to-date backend documentation"""
             }
         ]
     }
+    ,
+        "ICU_Nurse_Job": {
+        "description": """🩺 Job Title: ICU Registered Nurse
+📍 **Location:** Onsite – New York, NY  
+🕐 **Job Type:** Full-time, Night Shift  
+💼 **Department:** Intensive Care Unit (ICU)  
+📅 **Experience Level:** Mid-level (2–4 years)
+
+📝 **Job Summary:**
+We are seeking a compassionate and experienced ICU Registered Nurse to provide critical care to patients with life-threatening conditions. You will be part of a multidisciplinary team delivering high-quality, patient-centered care in a fast-paced environment.
+
+🔨 **Key Responsibilities:**
+- Monitor and assess critically ill patients in the ICU.
+- Administer medications, IV drips, and life support.
+- Operate and maintain ventilators, infusion pumps, and other ICU equipment.
+- Document patient status and treatment accurately.
+- Respond quickly to medical emergencies and provide CPR or advanced life support.
+- Collaborate with physicians and specialists on treatment plans.
+- Educate patient families on care, recovery, and post-ICU processes.
+- Ensure infection control and patient safety procedures are followed.
+
+📚 **Requirements:**
+
+✅ **Must-Have:**
+- Registered Nurse (RN) license (NY)
+- Bachelor of Science in Nursing (BSN)
+- 2+ years of ICU experience
+- BLS and ACLS certification
+- Proficiency in ICU monitoring and equipment use
+- Strong knowledge of critical care medications and dosing
+
+💡 **Nice-to-Have:**
+- CCRN certification
+- Experience with electronic health record (EHR) systems (e.g., Epic)
+- Prior work in trauma or cardiac ICU
+
+🧠 **Soft Skills:**
+- Emotional resilience and composure under pressure
+- Excellent communication and teamwork
+- Strong attention to detail and clinical judgment
+
+🎁 **What We Offer:**
+- Competitive pay with shift differentials
+- Full health and dental benefits
+- Tuition reimbursement
+- Onsite wellness resources
+- Professional development programs""",
+
+        "extracted": {
+            "Extracted Skills": """Patient monitoring, ventilator and infusion pump management, EHR usage (Epic), IV medication administration, CPR, infection control, trauma response, critical care pharmacology""",
+            "Extracted Experience (Years)": "2+ years in ICU setting",
+            "Extracted Education": "Bachelor of Science in Nursing (BSN); RN License (NY); BLS/ACLS certified",
+            "Extracted Duties": """Monitor and assess ICU patients, administer medications and IVs, manage ventilators and ICU equipment, collaborate on treatment, document care, educate families, respond to emergencies"""
+        },
+        "matches": [
+            {
+                "Resume": "Resume_Maria_ICU.pdf", "Match Score": 0.91,
+                "Resume (Text Summary)": """**Contact:** maria.nurse@example.com  
+**Summary:** ICU nurse with 3 years of night shift experience in a trauma hospital  
+**Education:** BSN, RN (NY), ACLS/BLS  
+**Experience:** Managed ventilated patients, handled emergencies, used Epic EHR  
+**Soft Skills:** Calm under pressure, detail-oriented  
+**Technical Skills:** IV drips, ventilators, patient monitoring, EHR""",
+                "Explanation": "Highly relevant ICU experience, certified, and proficient in required systems."
+            },
+            {
+                "Resume": "Resume_Jacob_ICU.pdf", "Match Score": 0.84,
+                "Resume (Text Summary)": """**Contact:** jacob.criticalcare@example.com  
+**Summary:** 4-year ICU RN with experience in cardiac and neuro ICU  
+**Education:** BSN, RN, BLS/ACLS  
+**Experience:** Used infusion pumps, documented with Epic, supported cardiac arrest cases  
+**Soft Skills:** Analytical, composed  
+**Technical Skills:** Monitoring, ventilators, CPR, Epic""",
+                "Explanation": "Strong ICU background, especially cardiac care and EHR usage."
+            },
+            {
+                "Resume": "Resume_Emily_MedSurg.pdf", "Match Score": 0.60,
+                "Resume (Text Summary)": """**Contact:** emily.nurse@example.com  
+**Summary:** Med-Surg nurse transitioning to ICU  
+**Education:** ADN, RN  
+**Experience:** Assisted ICU patients occasionally, basic EHR exposure  
+**Soft Skills:** Hardworking, eager to learn  
+**Technical Skills:** Vitals monitoring, wound care, IV start""",
+                "Explanation": "Some relevant skills, but lacks full ICU experience and BSN."
+            },
+            {
+                "Resume": "Resume_Omar_ICU.pdf", "Match Score": 0.78,
+                "Resume (Text Summary)": """**Contact:** omar.icunurse@example.com  
+**Summary:** ICU nurse from overseas with strong trauma response background  
+**Education:** BSN equivalent, RN license pending NY conversion  
+**Experience:** Emergency ventilation, critical meds, family communication  
+**Soft Skills:** Empathetic, quick decision maker  
+**Technical Skills:** Life support, ventilators, trauma stabilizations""",
+                "Explanation": "Strong ICU skills, but license not yet validated in NY."
+            },
+            {
+                "Resume": "Resume_Anna_ER.pdf", "Match Score": 0.52,
+                "Resume (Text Summary)": """**Contact:** anna.er@example.com  
+**Summary:** ER nurse with high-paced triage and first-response experience  
+**Education:** BSN, RN  
+**Experience:** Administered emergency meds, triaged patients, worked short ICU rotation  
+**Soft Skills:** Fast-paced responder  
+**Technical Skills:** Emergency assessment, CPR, IV insertion""",
+                "Explanation": "Good ER background but lacks sustained ICU experience."
+            }
+        ]
+    }
+
 }
 
 # -----------------------------------------
