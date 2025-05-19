@@ -70,33 +70,32 @@ Tools: Git, Docker, AWS, Jenkins, Kubernetes, Terraform
 📩 How to Apply:
 Submit your resume, GitHub/portfolio link, and a brief cover letter outlining your relevant experience and interest in the role.""",
         "extracted": {
-            "Extracted Skills": "Programming languages: Python, JavaScript (Node.js), Java, Go, SQL"
-                                "Frameworks: Django, Flask, Express.js, Spring Boot"
-                                "API design: RESTful APIs, GraphQL, OAuth2, JWT, API versioning"
-                                "Databases: PostgreSQL, MySQL, MongoDB, Redis"
-                                "Tools & technologies: Git, Docker, Kubernetes, Jenkins, Terraform, CI/CD pipelines"
-                                "Cloud platforms: AWS (Lambda, S3, EC2, RDS), Google Cloud Platform (GCP), Azure"
-                                "Testing: Unit, integration, and performance testing"
-                                "Software fundamentals: Data structures, algorithms, software design patterns"
-                                "Event-driven systems (nice-to-have): Kafka, RabbitMQ"
-                                "Monitoring/logging tools (nice-to-have): Prometheus, ELK stack"
-                                "Microservices architecture (nice-to-have)",
+            "Extracted Skills": """Programming languages: Python, JavaScript (Node.js), Java, Go, SQL
+                                    Frameworks: Django, Flask, Express.js, Spring Boot
+                                    API design: RESTful APIs, GraphQL, OAuth2, JWT, API versioning
+                                    Databases: PostgreSQL, MySQL, MongoDB, Redis
+                                    Tools & technologies: Git, Docker, Kubernetes, Jenkins, Terraform, CI/CD pipelines
+                                    Cloud platforms: AWS (Lambda, S3, EC2, RDS), Google Cloud Platform (GCP), Azure
+                                    Testing: Unit, integration, and performance testing
+                                    Software fundamentals: Data structures, algorithms, software design patterns
+                                    Event-driven systems (nice-to-have): Kafka, RabbitMQ
+                                    Monitoring/logging tools (nice-to-have): Prometheus, ELK stack
+                                    Microservices architecture (nice-to-have)"""
+                                    ,
 
             "Extracted Experience (Years)": "3+ years",
             
             "Extracted Education": "Bachelor’s degree in Computer Science, Software Engineering, or a related field",
             
-            "Extracted Duties": "Design, develop, and maintain RESTful and/or GraphQL APIs"
-                                "Build scalable, secure, and performant backend services"
-                                "Integrate third-party APIs and services (payment gateways, analytics, authentication)"
-                                "Develop and manage relational and non-relational databases"
-                                "Write unit, integration, and performance tests to ensure quality and stability"
-                                "Collaborate with DevOps for deployment and monitoring using Docker, Kubernetes, CI/CD, AWS/GCP"
-                                "Participate in code reviews and enforce backend coding standards and best practices"
-                                "Troubleshoot production issues and implement fixes/improvements"
-                                "Maintain clear and up-to-date backend documentation"
-
-"
+          "Extracted Duties": """Design, develop, and maintain RESTful and/or GraphQL APIs
+                                    Build scalable, secure, and performant backend services
+                                    Integrate third-party APIs and services (payment gateways, analytics, authentication)
+                                    Develop and manage relational and non-relational databases
+                                    Write unit, integration, and performance tests to ensure quality and stability
+                                    Collaborate with DevOps for deployment and monitoring using Docker, Kubernetes, CI/CD, AWS/GCP
+                                    Participate in code reviews and enforce backend coding standards and best practices
+                                    Troubleshoot production issues and implement fixes/improvements
+                                    Maintain clear and up-to-date backend documentation"""
         },
         "matches": [
             {
