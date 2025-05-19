@@ -74,7 +74,6 @@ We are seeking a talented and passionate Backend Developer to join our growing e
 Submit your resume, GitHub/portfolio link, and a brief cover letter outlining your relevant experience and interest in the role.
 """
         }
-    }
 ,
         "extracted": {
             "Extracted Skills": """Programming languages: Python, JavaScript (Node.js), Java, Go, SQL
