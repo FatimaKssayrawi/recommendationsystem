@@ -155,6 +155,7 @@ Submit your resume, GitHub/portfolio link, and a brief cover letter outlining yo
             }
         ]
     }
+}
 
 # -----------------------------------------
 # Display job description and matches
