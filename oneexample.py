@@ -15,7 +15,13 @@ supported_files = {
     "ICU_Nurse_Job.pdf": "ICU_Nurse_Job",
     "ICU_Nurse_Job.docx": "ICU_Nurse_Job",
     "Sales_Manager_Job.pdf": "Sales_Manager_Job",
-    "Sales_Manager_Job.docx": "Sales_Manager_Job"
+    "Sales_Manager_Job.docx": "Sales_Manager_Job",
+    "Customer_Success_Specialist_Job.pdf": "Customer_Success_Specialist_Job",
+    "Customer_Success_Specialist_Job.docx": "Customer_Success_Specialist_Job",
+    "Graphic_Designer_Job.pdf": "Graphic_Designer_Job",
+    "Graphic_Designer_Job.docx": "Graphic_Designer_Job"
+
+
 
 
 }
@@ -372,6 +378,207 @@ We are seeking an energetic and goal-driven Sales Manager to lead our B2B sales 
         }
     ]
 }
+ ,
+"Customer_Success_Specialist_Job": {
+    "description": """📌 **Position:** Customer Success Specialist  
+📍 **Location:** Remote (Global)  
+📅 **Employment Type:** Full-time | Flexible Hours  
+💬 **Reports To:** Head of Customer Experience  
+
+🌟 **Overview:**  
+At TechNova Inc., our customers are at the heart of everything we do. We’re looking for a Customer Success Specialist who can blend empathy, technical aptitude, and communication skills to deliver world-class support and proactive client care. You will be the primary point of contact for onboarding, troubleshooting, and guiding clients through their journey with our platform.  
+
+🌍 **Key Functions:**  
+As a Customer Success Specialist, you will serve as the client’s trusted advisor. From the initial onboarding to continued engagement, you’ll ensure client satisfaction and retention through strategic check-ins and problem-solving. You’ll also act as a liaison between the product team and the user base, communicating customer feedback effectively.
+
+💼 **What You'll Be Doing:**  
+- Serve as the primary contact for 50–100 SMB clients  
+- Conduct onboarding calls, product walkthroughs, and quarterly health checks  
+- Handle incoming support tickets and escalate technical issues  
+- Monitor usage metrics and identify at-risk clients  
+- Document customer feedback and advocate for user-centered improvements  
+- Create and update help center articles and tutorials  
+- Maintain CRM notes and status reports  
+
+🎓 **Qualifications:**  
+- Bachelor’s degree in Communication, Business, or a related field  
+- 2+ years of experience in customer-facing roles (SaaS preferred)  
+- Excellent verbal and written English communication  
+- Familiarity with support tools like Zendesk, Intercom, or Freshdesk  
+- Comfort using CRMs (e.g., Salesforce, HubSpot)  
+- Strong time management and multitasking ability  
+
+🌱 **Why Join Us:**  
+- Competitive base salary + performance bonuses  
+- Fully remote culture with flexible work hours  
+- Annual learning stipend and mental health days  
+- Fun, mission-driven team with real impact on users' lives""",
+
+    "extracted": {
+        "Extracted Skills": "Customer onboarding, client support, CRM (Salesforce, HubSpot), support platforms (Zendesk, Intercom), communication, knowledge base writing, user feedback reporting",
+        "Extracted Experience (Years)": "2+ years in customer success or related field",
+        "Extracted Education": "Bachelor’s in Communication, Business, or related field",
+        "Extracted Duties": "Onboard clients, manage support tickets, monitor account health, report feedback, maintain documentation, conduct strategic calls"
+    },
+    "matches": [
+        {
+            "Resume": "Resume_Lana_CustSuccess.pdf", "Match Score": 0.91,
+            "Resume (Text Summary)": """**Contact:** lana.success@example.com  
+**Summary:** Customer Success professional with 3 years of SaaS onboarding experience  
+**Education:** BA in Business Communication  
+**Experience:** Managed 100+ SMB clients at a CRM company  
+**Soft Skills:** Empathetic, proactive  
+**Technical Skills:** Zendesk, Intercom, Salesforce""",
+            "Explanation": "Excellent experience with SaaS tools, onboarding, and CRM systems."
+        },
+        {
+            "Resume": "Resume_Mark_TechSupport.pdf", "Match Score": 0.76,
+            "Resume (Text Summary)": """**Contact:** mark.support@example.com  
+**Summary:** Technical support agent transitioning to customer success  
+**Education:** BS in Information Systems  
+**Experience:** Handled support queues, trained new users, documented solutions  
+**Soft Skills:** Patient, detail-oriented  
+**Technical Skills:** Freshdesk, walkthrough creation""",
+            "Explanation": "Strong support background with relevant tools, learning curve for client ownership."
+        },
+        {
+            "Resume": "Resume_Salma_Onboard.pdf", "Match Score": 0.68,
+            "Resume (Text Summary)": """**Contact:** salma.onboard@example.com  
+**Summary:** Onboarding associate in EdTech startup  
+**Education:** BA in Education  
+**Experience:** Walkthroughs, knowledge base updates, CRM reporting  
+**Soft Skills:** Friendly, organized  
+**Technical Skills:** HubSpot, Notion, Trello""",
+            "Explanation": "Relevant onboarding experience, slightly less technical depth."
+        },
+        {
+            "Resume": "Resume_Tom_CustomerCare.pdf", "Match Score": 0.59,
+            "Resume (Text Summary)": """**Contact:** tom.care@example.com  
+**Summary:** Retail customer care specialist  
+**Education:** BA in English  
+**Experience:** Resolved complaints, handled billing issues, led team trainings  
+**Soft Skills:** Communicative, resilient  
+**Technical Skills:** Excel, internal ticketing system""",
+            "Explanation": "Good interpersonal skills but less aligned with SaaS and onboarding tools."
+        },
+        {
+            "Resume": "Resume_Sophie_Sales.pdf", "Match Score": 0.50,
+            "Resume (Text Summary)": """**Contact:** sophie.sales@example.com  
+**Summary:** Inside sales representative with support experience  
+**Education:** BBA  
+**Experience:** Upselling, CRM usage, customer check-ins  
+**Soft Skills:** Persuasive, solution-oriented  
+**Technical Skills:** Salesforce, Zoom, Email automation""",
+            "Explanation": "Sales focus overlaps with some customer success duties."
+        }
+    ]
+}
+    ,
+    "Graphic_Designer_Job": {
+    "description": """🎨 **We're hiring a Graphic Designer!**  
+💼 **Location:** Onsite – Dubai, UAE  
+🕒 **Schedule:** Full-time, Sunday to Thursday  
+🧑‍🎨 **Department:** Creative Studio  
+📅 **Experience:** 2–5 years
+
+---
+
+**About the Role:**  
+We’re not looking for someone who just “knows Photoshop.” We’re looking for a visual storyteller. Someone who can take an idea, give it personality, and bring it to life across print, digital, and motion. You’ll be part of a dynamic team where design drives the conversation, not just decorates it.
+
+You'll collaborate with copywriters, marketers, and developers to turn creative briefs into campaigns that make people stop scrolling. You’ll craft visuals that reflect our clients’ brands, moods, and messages.
+
+---
+
+**Your Day Might Include:**  
+- Designing Instagram carousels that feel like art.  
+- Mocking up landing pages that are as functional as they are beautiful.  
+- Working with illustrators and animators to develop motion graphics.  
+- Brainstorming ideas in creative workshops.  
+- Packaging presentations with pixel-perfect precision.  
+
+---
+
+**What We’re Looking For:**  
+- A Bachelor’s degree in Graphic Design, Fine Arts, or a related field.  
+- A strong portfolio that shows range (branding, social, layout, digital).  
+- Proficiency in Adobe Creative Suite (Photoshop, Illustrator, InDesign).  
+- Working knowledge of Figma or Sketch is a plus.  
+- Experience with motion/After Effects is a bonus, not a requirement.  
+- Someone who sweats the small stuff: typography, spacing, alignment.  
+- Team player with good vibes. Ego not included.
+
+---
+
+**What You’ll Love:**  
+- A creative-first studio culture  
+- An annual design budget (use it for fonts, courses, etc.)  
+- Apple gear, high-end monitors, and coffee you don’t have to pay for  
+- Travel opportunities to pitch with the team  
+- A boss who used to be a designer too 😉""",
+
+    "extracted": {
+        "Extracted Skills": "Adobe Creative Suite, graphic layout, branding, typography, digital content design, Figma/Sketch, basic motion design (After Effects)",
+        "Extracted Experience (Years)": "2–5 years of professional design experience",
+        "Extracted Education": "Bachelor’s in Graphic Design, Fine Arts, or related field",
+        "Extracted Duties": "Create brand visuals, design digital and print content, collaborate on creative concepts, work with developers and writers, deliver campaign-ready assets"
+    },
+    "matches": [
+        {
+            "Resume": "Resume_Mira_Design.pdf", "Match Score": 0.92,
+            "Resume (Text Summary)": """**Contact:** mira.design@example.com  
+**Summary:** Multidisciplinary designer with 4 years in brand, digital, and social design  
+**Education:** BA in Graphic Design  
+**Experience:** Campaign visuals for startups, fluent in Adobe CC and Figma  
+**Soft Skills:** Creative thinker, strong communicator  
+**Technical Skills:** Photoshop, Illustrator, InDesign, Figma, After Effects""",
+            "Explanation": "Strong portfolio match, well-rounded creative experience, skilled in motion and layout."
+        },
+        {
+            "Resume": "Resume_Rami_Visuals.pdf", "Match Score": 0.75,
+            "Resume (Text Summary)": """**Contact:** rami.visuals@example.com  
+**Summary:** Visual designer with background in web and social media assets  
+**Education:** BFA in Design  
+**Experience:** Freelance projects, landing page mockups, basic animation  
+**Soft Skills:** Visual storyteller  
+**Technical Skills:** Sketch, Photoshop, Premiere, Illustrator""",
+            "Explanation": "Good digital design experience; minor gaps in branding depth."
+        },
+        {
+            "Resume": "Resume_Lina_Junior.pdf", "Match Score": 0.60,
+            "Resume (Text Summary)": """**Contact:** lina.junior@example.com  
+**Summary:** Junior designer with passion for typography and layouts  
+**Education:** Bachelor in Fine Arts  
+**Experience:** Internship at ad agency, university design lab  
+**Soft Skills:** Detail-oriented, passionate  
+**Technical Skills:** InDesign, Illustrator, Canva""",
+            "Explanation": "Shows potential but lacks experience and breadth in tools."
+        },
+        {
+            "Resume": "Resume_Ahmed_UIUX.pdf", "Match Score": 0.67,
+            "Resume (Text Summary)": """**Contact:** ahmed.uiux@example.com  
+**Summary:** UI/UX designer with a branding background  
+**Education:** BA in Visual Communication  
+**Experience:** Worked on design systems and logo revamps  
+**Soft Skills:** Analytical, adaptable  
+**Technical Skills:** Figma, Photoshop, InDesign""",
+            "Explanation": "Good Figma/UI focus, but missing emphasis on campaign design."
+        },
+        {
+            "Resume": "Resume_Zara_Creative.pdf", "Match Score": 0.83,
+            "Resume (Text Summary)": """**Contact:** zara.creative@example.com  
+**Summary:** Conceptual graphic designer with agency and studio experience  
+**Education:** BA in Graphic Design  
+**Experience:** Designed pitch decks, social visuals, animations  
+**Soft Skills:** Expressive, collaborative  
+**Technical Skills:** Adobe Suite, After Effects, Google Slides, Trello""",
+            "Explanation": "Great conceptual profile, strong motion skills, well-aligned."
+        }
+    ]
+}
+
+
+    
 
 
 }
