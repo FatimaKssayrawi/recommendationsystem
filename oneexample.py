@@ -266,6 +266,110 @@ We are seeking a compassionate and experienced ICU Registered Nurse to provide c
             }
         ]
     }
+    ,
+    "Sales_Manager_Job": {
+    "description": """💼 Job Title: Sales Manager
+📍 Location: Beirut, Lebanon
+🕐 Job Type: Full-time
+📅 Experience Level: Mid-level (3–6 years)
+
+📝 Job Summary:
+We are seeking an energetic and goal-driven Sales Manager to lead our B2B sales team. The ideal candidate will oversee the sales pipeline, develop strategic plans, and build long-term customer relationships. You will report directly to the Head of Sales and work closely with marketing and product teams to align growth efforts.
+
+🔨 Key Responsibilities:
+- Lead and mentor a team of 5–7 sales representatives.
+- Develop and execute sales strategies to meet revenue targets.
+- Manage the full sales lifecycle: prospecting, pitching, negotiating, and closing.
+- Maintain accurate CRM records and sales forecasts.
+- Establish strong relationships with key clients and stakeholders.
+- Collaborate with marketing to optimize lead generation and campaigns.
+- Prepare regular reports on team performance and KPIs.
+
+📚 Requirements:
+
+✅ Must-Have:
+- Bachelor’s degree in Business, Marketing, or a related field.
+- 3+ years of experience in sales, including team leadership.
+- Strong B2B sales track record.
+- Excellent negotiation and presentation skills.
+- Familiarity with CRM tools like Salesforce or HubSpot.
+
+💡 Nice-to-Have:
+- Experience in SaaS or tech sales
+- Multilingual (Arabic, English, French)
+- Knowledge of regional markets
+
+🧠 Soft Skills:
+- Leadership and coaching ability
+- Strategic mindset with hands-on execution
+- Resilient and results-oriented
+
+🎁 What We Offer:
+- Competitive salary with commissions
+- Health and travel insurance
+- Professional development programs
+- A collaborative and supportive team culture""",
+
+    "extracted": {
+        "Extracted Skills": "B2B sales, sales strategy, CRM (Salesforce/HubSpot), negotiation, KPI reporting, customer relationship management, team leadership, lead generation, SaaS sales",
+        "Extracted Experience (Years)": "3+ years in B2B sales with team leadership",
+        "Extracted Education": "Bachelor’s degree in Business, Marketing, or a related field",
+        "Extracted Duties": "Lead and mentor team, develop and execute sales strategies, manage sales cycle, forecast revenue, build client relationships, align with marketing"
+    },
+    "matches": [
+        {
+            "Resume": "Resume_Adam_Sales.pdf", "Match Score": 0.89,
+            "Resume (Text Summary)": """**Contact:** adam.sales@example.com  
+**Summary:** Sales manager with 4+ years of B2B sales and CRM experience  
+**Education:** BA in Business Administration  
+**Experience:** Led 6-person team, exceeded quarterly targets 3 years in a row  
+**Soft Skills:** Motivator, strategic planner  
+**Technical Skills:** Salesforce, cold calling, lead qualification""",
+            "Explanation": "Strong B2B sales experience with proven leadership and CRM usage."
+        },
+        {
+            "Resume": "Resume_Yasmine_B2B.pdf", "Match Score": 0.77,
+            "Resume (Text Summary)": """**Contact:** yasmine.b2b@example.com  
+**Summary:** Senior B2B sales representative with tech sales focus  
+**Education:** BA in Marketing  
+**Experience:** SaaS sales, client onboarding, CRM pipeline management  
+**Soft Skills:** Persuasive, analytical  
+**Technical Skills:** HubSpot, Excel, SaaS products""",
+            "Explanation": "Strong technical sales profile, some leadership exposure."
+        },
+        {
+            "Resume": "Resume_Elias_Telecom.pdf", "Match Score": 0.64,
+            "Resume (Text Summary)": """**Contact:** elias.telecom@example.com  
+**Summary:** Account executive in telecom industry  
+**Education:** BS in Business  
+**Experience:** Managed 30+ accounts, negotiated B2B contracts  
+**Soft Skills:** Persistent, team-oriented  
+**Technical Skills:** CRM, Excel, quoting tools""",
+            "Explanation": "Solid sales skills but less emphasis on strategy and team leadership."
+        },
+        {
+            "Resume": "Resume_Rana_EntrySales.pdf", "Match Score": 0.48,
+            "Resume (Text Summary)": """**Contact:** rana.entry@example.com  
+**Summary:** Entry-level sales assistant, excellent communicator  
+**Education:** BBA, just graduated  
+**Experience:** Sales intern for 6 months  
+**Soft Skills:** Enthusiastic, fast learner  
+**Technical Skills:** Google Sheets, customer calls""",
+            "Explanation": "Too junior for management responsibilities."
+        },
+        {
+            "Resume": "Resume_Tony_Marketing.pdf", "Match Score": 0.59,
+            "Resume (Text Summary)": """**Contact:** tony.marketing@example.com  
+**Summary:** Marketing coordinator pivoting to sales  
+**Education:** BA in Communications  
+**Experience:** Handled campaigns and lead gen for B2B SaaS  
+**Soft Skills:** Creative, data-driven  
+**Technical Skills:** HubSpot, campaign tools, SEO""",
+            "Explanation": "Marketing background aligns with lead gen, but lacks direct sales leadership."
+        }
+    ]
+}
+
 
 }
 
