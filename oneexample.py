@@ -12,10 +12,10 @@ job_file = st.file_uploader("Upload a job description:", type=["pdf"])
 job_data = {
     "Backend_Developer_Job.pdf": {
         "description": """🔧 Job Title: Backend Developer
-📍 Location: Hybrid – Detroit, MI / Remote
-🕐 Job Type: Full-time
-💼 Department: Software Engineering
-📅 Experience Level: Mid-level (3–5 years)
+📍 **Location:** Hybrid – Detroit, MI / Remote
+🕐 **Job Type:** Full-time
+💼 **Department:** Software Engineering
+📅 **Experience Level:** Mid-level (3–5 years)
 
 📝 **Job Summary:**
 We are seeking a talented and passionate Backend Developer to join our growing engineering team. You will be responsible for building and maintaining the server-side logic, APIs, and database systems that power our web and mobile applications. As part of a cross-functional team, you will work closely with front-end developers, product managers, and DevOps engineers to deliver scalable and high-performance backend services.
