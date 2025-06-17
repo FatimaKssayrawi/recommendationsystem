@@ -260,74 +260,101 @@ def predict_category(text):
     vec = category_vectorizer.transform([text_cleaned])
     return category_model.predict(vec)[0]
 
-def extract_features(text, predicted_category):
-    text = clean_text(text)
-    doc = nlp(text)
-    email_pattern = re.compile(r"[\w.-]+@[\w.-]+\.[a-zA-Z]{2,6}")
-    phone_pattern = re.compile(r"\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}")
 
-    name = ""
-    for line in text.splitlines():
-        if line.strip() and re.match(r'^[A-Z][a-z]+(\s[A-Z][a-z]+)+$', line.strip(), re.IGNORECASE):
-            name = line.strip()
-            break
 
-    phone = phone_pattern.findall(text)
-    email = email_pattern.findall(text)
+# Education extractor
+def extract_education(text):
+    if not isinstance(text, str):
+        return ""
+    text = text.replace("is required", "").replace("Is Required", "").strip()
+    match = re.search(r"(bachelor|master|phd|associate|diploma|high school).*? in ([a-zA-Z\s&]+)", text, re.IGNORECASE)
+    if match:
+        level = match.group(1).capitalize()
+        field = match.group(2).strip().title()
+        return f"{level} in {field}"
+    return ""
 
-    edu_pattern = re.compile(r"(?i)(bachelor|master|phd|associate).*?(?:in\s+)?([A-Z][a-zA-Z\s]+),?\s+([A-Z][a-zA-Z\s]+)")
-    education_matches = edu_pattern.findall(text)
-    education = [f"{match[0].title()} in {match[1].strip()}, {match[2].strip()}" for match in education_matches]
+# Experience extractor
+def extract_experience_years_by_dates(text):
+    if not isinstance(text, str):
+        return ""
+    current_year = datetime.datetime.now().year
+    text = text.lower()
+    patterns = re.findall(r"(20[0-1][0-9]|202[0-5])\s*(?:\-|–|to)\s*(present|20[0-1][0-9]|202[0-5])", text)
+    match = re.search(r"(\d+)\s+(?:\+?\s*)?years?\s+(?:of)?\s+experience", text)
+    if match:
+        return int(match.group(1))
+    total_years = 0
+    for start, end in patterns:
+        start = int(start)
+        end = current_year if end in ["present", "now"] else int(end)
+        if end >= start:
+            total_years += end - start
+    return total_years if total_years > 0 else ""
 
-    exp_pattern = re.compile(r"([A-Z][a-zA-Z\s]+),\s*([A-Z][a-zA-Z\s]+)\s*[—-]\s*(\d{4})\s*to\s*(Present|\d{4})")
-    experience_matches = exp_pattern.findall(text)
-    experience = [" - ".join(match) for match in experience_matches]
+# Duties extractor
+def extract_duties(text):
+    if not isinstance(text, str):
+        return ""
+    lines = re.split(r"\.|\n|\r", text)
+    duties = [line.strip() for line in lines if any(word in line.lower() for word in [
+        "responsibilit", "duties", "manage", "lead", "organize", "supervise", "coordinate", "develop"
+    ])]
+    return ". ".join(duties[:3])
 
-    SOFT_SKILLS = {"communication", "teamwork", "leadership", "problem solving", "time management",
-                   "adaptability", "creativity", "work ethic", "attention to detail", "interpersonal skills",
-                   "collaboration", "empathy", "active listening", "critical thinking", "decision making",
-                   "conflict resolution", "flexibility", "self-motivation", "organization", "negotiation"}
-
-    found_soft_skills = set()
+# Skill extractor
+def extract_all_skills(text, category):
+    if not isinstance(text, str):
+        return ""
+    doc = nlp(text.lower())
+    found_skills = set()
+    for chunk in doc.noun_chunks:
+        if chunk.text.strip() in SOFT_SKILLS:
+            found_skills.add(chunk.text.strip())
     for token in doc:
-        for skill in SOFT_SKILLS:
-            skill_vector = nlp(skill).vector
-            token_vector = token.vector
-            similarity = token_vector.dot(skill_vector) / (np.linalg.norm(token_vector) * np.linalg.norm(skill_vector))
-            if similarity > 0.7:
-                found_soft_skills.add(skill)
-
-    # Dynamic category-based technical skills
-    found_tech = set()
-    found_tools = set()
-    if predicted_category in PROFESSIONAL_SKILLS:
+        if token.text.strip() in SOFT_SKILLS:
+            found_skills.add(token.text.strip())
+    if category in PROFESSIONAL_SKILLS:
         for token in doc:
-            for skill in PROFESSIONAL_SKILLS[predicted_category]["Technical Skills"]:
-                if skill.lower() in text:
-                    found_tech.add(skill)
-            for tool in PROFESSIONAL_SKILLS[predicted_category]["Software Tools"]:
-                if tool.lower() in text:
-                    found_tools.add(tool)
+            if not token.has_vector or token.is_stop:
+                continue
+            for skill in PROFESSIONAL_SKILLS[category]["Technical Skills"]:
+                if nlp(skill.lower()).similarity(token) > 0.75:
+                    found_skills.add(skill)
+            for tool in PROFESSIONAL_SKILLS[category]["Software Tools"]:
+                if nlp(tool.lower()).similarity(token) > 0.75:
+                    found_skills.add(tool)
+    return ", ".join(sorted(found_skills))
 
+# ✅ Master function for single job
+def extract_job_features(job_description, predicted_category):
+    """
+    Extracts key features from a single job description.
+
+    Parameters:
+        job_description (str): The job description text.
+        category (str): The job category.
+
+    Returns:
+        dict: Dictionary with education, experience, duties, and skills.
+    """
     return {
-        "Name": name,
-        "Phone": phone[0] if phone else "",
-        "Email": email[0] if email else "",
-        "Education": ", ".join(education),
-        "Soft Skills": ", ".join(found_soft_skills),
-        "Technical Skills": ", ".join(found_tech),
-        "Software Tools": ", ".join(found_tools),
-        "Experience": " | ".join(experience)
+        "Extracted Education": extract_education(job_description),
+        "Extracted Experience (Years)": extract_experience_years_by_dates(job_description),
+        "Extracted Duties": extract_duties(job_description),
+        "Extracted Skills": extract_all_skills(job_description, predicted_category)
     }
+
 
 def get_top_5_recommendations(job_text, job_category):
     job_clean = clean_text(job_text)
     job_vec = recommendation_vectorizer.transform([job_clean])
     job_embed = bert_model.encode(job_clean)
+    
+    resume_scores = []
 
-    resumes_scores = []
-    for _, j in df_resumes[df_resumes["Category"] == job_category].iterrows():
-        resume_clean = clean_text(f"{j['Extracted Education']} {j['Extracted Skills']} {j['Extracted Duties']}")
+    for _, resume_row in df_resumes[df_resumes["Category"] == job_category].iterrows():
+        resume_clean = clean_text(f"{resume_row['Education']} {resume_row['Soft Skills']} {resume_row['Technical Skills']} {resume_row['Experience']}")
         resume_vec = recommendation_vectorizer.transform([resume_clean])
         resume_embed = bert_model.encode(resume_clean)
 
@@ -336,23 +363,26 @@ def get_top_5_recommendations(job_text, job_category):
 
         similarity = np.dot(job_embed, resume_embed) / (np.linalg.norm(job_embed) * np.linalg.norm(resume_embed))
 
-        resumes_scores.append({
-            "Resume Title": j["Resume Title"],
-            "Phone": j.get("Company Name", ""),
-            "Category": j["Category"],
+        resume_scores.append({
+            "Resume Name": resume_row["Name"],
+            "Resume Email": resume_row.get("Email", ""),
+            "Phone": resume_row.get("Phone", ""),
+            "Category": resume_row["Category"],
             "Match Probability": round(match_prob, 3),
-            "BERT Similarity": round(similarity, 3)
+            "BERT Similarity": round(similarity, 3),
+            
         })
 
-    return sorted(job_scores, key=lambda x: x["Match Probability"], reverse=True)[:5]
+    return sorted(resume_scores, key=lambda x: x["Match Probability"], reverse=True)[:5]
+
 
 # ------------------------------
 # Streamlit App
 # ------------------------------
 st.set_page_config(page_title="Job Matcher", layout="wide")
-st.title("🔍 Resume Analysis & Job Matching")
+st.title("🔍 Job Analysis & Resume Matching")
 
-uploaded_file = st.file_uploader("Upload your Resume (PDF or DOCX)", type=["pdf", "docx"])
+uploaded_file = st.file_uploader("Upload your Job Description (PDF or DOCX)", type=["pdf", "docx"])
 
 if uploaded_file:
     if uploaded_file.name.endswith(".pdf"):
@@ -360,8 +390,8 @@ if uploaded_file:
     else:
         job_text = extract_text_from_docx(uploaded_file)
 
-    st.subheader("📄 Uploaded Job")
-    st.text(resume_text[:1000] + "..." if len(job_text) > 1000 else job_text)
+    st.subheader("📄 Uploaded Job Description")
+    st.text(job_text[:1000] + "..." if len(job_text) > 1000 else job_text)
 
     st.subheader("📌 Predicted Job Category")
     predicted_category = predict_category(job_text)
